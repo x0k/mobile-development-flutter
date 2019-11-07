@@ -10,5 +10,8 @@
     "code-surfer": "3.0.0-beta.1",
     "mdx-deck": "3.0.13"
   },
-  "name": "mobile-development-flutter"
+  "name": "mobile-development-flutter",
+  "dependencies": {
+    "prismjs": "^1.17.1"
+  }
 }

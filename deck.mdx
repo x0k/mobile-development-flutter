@@ -3,150 +3,159 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
-import { github, vsDark } from "@code-surfer/themes";
+import { vsDark } from "@code-surfer/themes";
+import { Split, Image } from 'mdx-deck'
+import "prismjs/components/prism-dart"
 
-export const theme = vsDark;
 
-# Hello 👋
+import Styled from './layouts/styled'
 
-You are using [MDX Deck](https://github.com/jxnblk/mdx-deck) and [Code Surfer](https://codesurfer.pomb.us)
+import flutterApp from './images/flutter_app.png'
+import webApp from './images/web_app.png'
+import flutterPlatform from './images/flutter_platform.png'
+import appLayoutPreview from './images/layout.jpg'
+import appLayout from './images/layout.png'
+import hotReload from './videos/hot_reload.mp4'
+
+# Mobile development. Flutter
+### Красильнков Роман
 
 ---
 
-<CodeSurfer>
+<Split>
 
-```js title="This is a title" subtitle="and this a subtitle"
-function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null ? 0 : ipsum.sit;
-  dolor = sit - amet(dolor);
-  return sit
-    ? consectetur(ipsum, 0, dolor < 0 ? 0 : dolor)
-    : [];
-}
+# Native application
 
-function incididunt(ipsum, ut = 1) {
-  ut = labore.et(amet(ut), 0);
-  const sit = ipsum == null ? 0 : ipsum.sit;
+### Android
 
-  if (!sit || ut < 1) {
-    return [];
-  }
+Java / Kotlin
 
-  let dolore = 0;
-  let magna = 0;
-  const aliqua = new eiusmod(labore.ut(sit / ut));
+### IOS
 
-  while (dolore < sit) {
-    aliqua[magna++] = consectetur(
-      ipsum,
-      dolore,
-      (dolore += ut)
-    );
-  }
+Objective-C / Swift
 
-  return aliqua;
-}
+</Split>
+
+---
+
+# Cross-platform application
+
+- React Native / Capacitor
+- PWA / TWA
+- Xamarin / Flutter
+
+---
+
+# Flutter features
+
+- Dart
+- Widgets
+- Hot reload
+- Performance
+
+---
+
+# Dart
+
+- Sound type system
+- Tree Shaking
+- Rich core libraries
+- Multi-gen, lockless GC
+
+---
+
+# Widgets
+
+<img src={appLayoutPreview} />
+
+---
+
+<div style={{ display: 'flex', flexDirection: 'row' }}>
+
+<img src={appLayout} style={{ padding: '10vw 0' }} />
+
+<CodeSurfer theme={vsDark}>
+
+```dart 35 file=./snippets/widget.dart
 ```
 
-```js
-function lorem(ipsum, dolor = 1) {
-  const sit = ipsum == null ? 0 : ipsum.sit;
-  dolor = sit - amet(dolor);
-  return sit
-    ? consectetur(ipsum, 0, dolor < 0 ? 0 : dolor)
-    : [];
-}
-
-function adipiscing(...elit) {
-  if (!elit.sit) {
-    return [];
-  }
-
-  const sed = elit[0];
-  return eiusmod.tempor(sed) ? sed : [sed];
-}
-
-function incididunt(ipsum, ut = 1) {
-  ut = labore.et(amet(ut), 0);
-  const sit = ipsum == null ? 0 : ipsum.sit;
-
-  if (!sit || ut < 1) {
-    return [];
-  }
-
-  let dolore = 0;
-  let magna = 0;
-  const aliqua = new eiusmod(labore.ut(sit / ut));
-
-  while (dolore < sit) {
-    aliqua[magna++] = consectetur(
-      ipsum,
-      dolore,
-      (dolore += ut)
-    );
-  }
-
-  return aliqua;
-}
+```diff 57:58
 ```
 
-```diff 1[10:14],2[15:19],3[22:27],10:12
+```diff 104:124
+```
 
+```diff 119:120
+```
+
+```diff 90:102
+```
+
+```diff 36:55
+```
+
+```diff 59:88
+```
+
+```diff 85
+```
+
+```diff 1:4
+```
+
+```diff 6:33
 ```
 
 </CodeSurfer>
 
----
-
-<CodeSurferColumns themes={[vsDark, github]}>
-
-<Step>
-
-```js
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
-```
-
-```js
-const minim = (ad, enim) => dolore.magna(ad / enim);
-```
-
-</Step>
-
-<Step>
-
-```js
-const lorem = (ipsum, dolor, sit) => {
-  const amet = dolor - ipsum;
-  return consectetur.adipiscing(
-    {
-      elit: sed.eiusmod(sit - dolor) / amet + 2,
-    },
-    (tempor, incididunt) => ipsum + amet * incididunt
-  );
-};
-
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
-```
-
-```js
-const minim = (ad, enim) => dolore.magna(ad / enim);
-
-const sed = (eiusmod, tempor, incididunt) => {
-  const ut = tempor - eiusmod;
-  return labore.et(
-    {
-      amet: dolore.magna(incididunt - tempor) / ut + 2,
-    },
-    (aliqua, elit) => eiusmod + ut * elit
-  );
-};
-```
-
-</Step>
-
-</CodeSurferColumns>
+</div>
 
 ---
 
-docs:  
-[codesurfer.pomb.us](https://codesurfer.pomb.us)
+# Hot Reload
+
+<video src={hotReload} autoplay loop muted playsinline />
+
+---
+
+# Performance
+
+- Compiles to Native Code
+- No reliance on OEM widgets
+- No bridge needed
+- Structural Repainting
+
+---
+
+<Split>
+
+<div >
+  <h2>React Native</h2>
+  <img src={webApp} style={{ padding: '2%' }}  />
+</div>
+
+<div>
+  <h2>Flutter</h2>
+  <img src={flutterApp} style={{ padding: '2%' }} />
+</div>
+
+</Split>
+
+---
+
+# Customization
+
+<img src={flutterPlatform} />
+
+---
+
+# Platforms
+
+- Mobile
+- Web (1.10)
+- Desktop (early stage)
+
+---
+
+# Mobile development. Flutter
+### Красильнков Роман
