@@ -1,23 +1,18 @@
-# MDX Deck + Code Surfer template
+# mobile-development-flutter
 
-This project was generated with the `npm init code-surfer-deck` command.
+Доклад на тему "Мобильная разработка. Flutter"
 
-## Development
+Выполнил Красильников Роман
 
-To run the presentation deck in development mode:
+## Запуск
 
-```sh
-npm start
-```
+1. `npm install`
+2. `npm start`
 
-Edit the [`deck.mdx`](deck.mdx) file to get started.
+Презентация будет доступна по адресу: http://localhost:8000/
 
-## Exporting
+## Сборка
 
-To build the presentation deck:
+`npm run build`
 
-```sh
-npm run build
-```
-
-For more documentation see [MDX Deck](https://github.com/jxnblk/mdx-deck) and [Code Surfer](https://codesufer.pomb.us/)
+Файлы будут лежать в директории `public`
